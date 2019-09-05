@@ -4,7 +4,65 @@
 int main()
 {
     /**
-    1006 - Iniciante
+    1001 - Iniciante (Extremamente Básico)
+    */
+
+    /*int A, B;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    printf("X = %d\n", (A+B));
+    return 0;*/
+
+    /**
+    1002 - Iniciante (Área do Círculo)
+        OBS: a função "pow" já está inserida dentro da própria biblioteca <stdio.h>
+    */
+
+    /*double raio, pi = 3.14159;
+    scanf("%lf", &raio);
+    printf("A=%.4lf\n", (pi * raio * raio)); ///OUTRA ALTERNATIVA (pi * pow(raio,2))
+    return 0;*/
+
+    /**
+    1003 - Iniciante (Soma Simples)
+    */
+
+    /*int A, B, SOMA;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    SOMA = A + B;
+    printf("SOMA = %d\n", SOMA);
+    return 0;*/
+
+    /**
+    1004 - Iniciante (Produto Simples)
+    */
+
+    /*int A, B, PROD;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    PROD = A * B;
+    printf("PROD = %d\n", PROD);
+    return 0;*/
+
+    /**
+    1005 - Iniciante (Média 1)
+        Utiliza Média ponderada
+        A -> peso: 3.5
+        B -> peso: 7.5
+        Total = 11
+    */
+
+    /*double A, B, MEDIA;
+    scanf("%lf", &A);
+    scanf("%lf", &B);
+    MEDIA = (A * 3.5 + B * 7.5)/11;
+    printf("MEDIA = %.5lf\n", MEDIA);
+    return 0;*/
+
+    /**
+    1006 - Iniciante (Média 2)
+        Utiliza Média ponderada
         A -> peso: 2
         B -> peso: 3
         C -> peso: 5
@@ -19,7 +77,7 @@ int main()
     return 0;*/
 
     /**
-    1007 - Iniciante
+    1007 - Iniciante (Diferença)
     */
 
     /*int A, B, C, D, DIFERENCA;
@@ -32,8 +90,9 @@ int main()
     return 0;*/
 
     /**
-    1008 - Iniciante
+    1008 - Iniciante (Salário)
     */
+
     /*int num, horas;
     float valorHora;
     scanf("%d", &num);
@@ -43,8 +102,9 @@ int main()
     return 0;*/
 
     /**
-    1009 - Iniciante
+    1009 - Iniciante (Salário com Bônus)
     */
+
     /*char nome[30];
     double salarioFixo, totalVendas;
     scanf("%s", &nome);
@@ -54,8 +114,9 @@ int main()
     return 0;*/
 
     /**
-    1010 - Iniciante
+    1010 - Iniciante (Cálculo Simples)
     */
+
     /*int codPeca1, numPecas1, codPeca2, numPecas2;
     float valUnitPeca1, valUnitPeca2;
     scanf("%d %d %f", &codPeca1, &numPecas1, &valUnitPeca1);
@@ -64,24 +125,28 @@ int main()
     return 0;*/
 
     /**
-    1011 - Iniciante
+    1011 - Iniciante (Esfera)
     */
+
     /*double raio, pi = 3.14159;
     scanf("%lf", &raio);
     printf("VOLUME = %.3f\n", ((4.0/3)* pi * pow(raio, 3))); //printf("VOLUME = %.3f\n", ((4.0/3)* pi * raio * raio * raio));
     return 0;*/
 
     /**
-    1012 - Iniciante
+    1012 - Iniciante (Área)
+    OBS: EXERCÍCIO BEM COMPLETO DE OPERAÇÕES MATEMÁTICAS
     */
+
     /*double A, B, C, pi = 3.14159;
     scanf("%lf %lf %lf", &A, &B, &C);
     printf("TRIANGULO: %.3f\nCIRCULO: %.3f\nTRAPEZIO: %.3f\nQUADRADO: %.3f\nRETANGULO: %.3f\n", ((A*C)/2), (pi * pow(C,2)), (((A + B)*C)/2), (B*B), (A*B));
     return 0;*/
 
     /**
-    1013 - Iniciante
+    1013 - Iniciante (O Maior)
     */
+
     /*int A, B, C;
     int maior;
     scanf("%d %d %d", &A, &B, &C);
@@ -91,8 +156,9 @@ int main()
     return 0;*/
 
     /**
-    1014 - Iniciante
+    1014 - Iniciante (Consumo)
     */
+
     /*int X;
     float Y;
     scanf("%d", &X);
@@ -101,8 +167,10 @@ int main()
     return 0;*/
 
     /**
-    1015 - Iniciante
+    1015 - Iniciante (Distância Entre Dois Pontos)
+    OBS: Utiliza raizes e potências
     */
+
     /*float x1,x2,y1,y2;
     scanf("%f %f", &x1, &y1);
     scanf("%f %f", &x2, &y2);
@@ -110,21 +178,23 @@ int main()
     return 0;*/
 
     /**
-    1016 - Iniciante
+    1016 - Iniciante (Distância)
     distance em km
     | Km | Tempo      |
     | 30 | 60 minutos |
     */
+
     /*int distance;
     scanf("%d", &distance);
     printf("%d minutos\n", (distance * 60)/30);
     return 0;*/
 
     /**
-    1017 - Iniciante
+    1017 - Iniciante (Gasto de Combustível)
     Automovel faz 12 KM/L
     * OBS: Considerar 12.0 pra forçar a operação pra resultar em float
     */
+
     /*int tempo;
     int velMedia;
     scanf("%d", &tempo);
@@ -133,9 +203,10 @@ int main()
     return 0;*/
 
     /**
-    1018 - Iniciante
+    1018 - Iniciante (Cédulas)
     -> Interessante pois trabalha com divisão inteira de um número
     */
+
     /*int N;
     scanf("%d", &N);
     printf("%d\n", N);
@@ -155,10 +226,11 @@ int main()
     return 0;*/
 
     /**
-    1019 - Iniciante
+    1019 - Iniciante (Conversão de Tempo)
     -> Importancia da utilização de mais variáveis pode facilitar o problema
     -> Divisão inteira
     */
+
     ///Opcao 1
     /*int N, H, M, S;
     scanf("%d", &N);
@@ -173,15 +245,14 @@ int main()
     return 0;*/
 
     /**
-    1020 - Iniciante
-    -> idade em dias
+    1020 - Iniciante (Idade em Dias)
     */
-    ///Opcao 1
-    int idade;
+
+    /*int idade;
     scanf("%d", &idade);
     int ano = (idade/365);
     int mes = (idade - 365*(idade/365))/30;
     int dia = idade - ano * 365 - mes * 30;
     printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n", ano, mes, dia);
-    return 0;
+    return 0;*/
 }
