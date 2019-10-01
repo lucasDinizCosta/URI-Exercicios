@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
@@ -255,4 +256,117 @@ int main()
     int dia = idade - ano * 365 - mes * 30;
     printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n", ano, mes, dia);
     return 0;*/
+
+    /**
+    *   1142 - Iniciante (PUM)
+    */
+
+    int N;
+    scanf("%d",&N);
+    int i = 0;
+    int j = 0, count = 1;
+    for(i = 0; i < N; i++){
+        for(j = 0; j < 4; j++){
+            if(j == 3){
+                printf("PUM\n");
+            }
+            else{
+                printf("%d ", count);
+            }
+            count++;
+        }
+    }
+    return 0;
+
+    /**
+    *   1858 - Iniciante (A Resposta de Theon)
+    */
+    /*int N, i, T, menorT, menorTInidice;
+    scanf("%d", &N);
+    for(i = 0; i < N; i++){
+        if(i == 0){
+            scanf("%d", &T);
+            menorTInidice = i+1;
+            menorT = T;
+        }
+        else{
+            scanf("%d", &T);
+            if(T < menorT){
+                menorTInidice = i+1;
+                menorT = T;
+            }
+        }
+    }
+    printf("%d\n", menorTInidice);
+    return 0;*/
+
+    /**
+    *   1858 - Iniciante (A Resposta de Theon)
+    */
+
+    /*int N, i, T, menorT, menorTInidice;
+    scanf("%d", &N);
+    for(i = 0; i < N; i++){
+        if(i == 0){
+            scanf("%d", &T);
+            menorTInidice = i+1;
+            menorT = T;
+        }
+        else{
+            scanf("%d", &T);
+            if(T < menorT){
+                menorTInidice = i+1;
+                menorT = T;
+            }
+        }
+    }
+    printf("%d\n", menorTInidice);
+    return 0;*/
+
+    /**
+    *   2373 - Iniciante (Garçom)
+    */
+
+    /*int N, i, L, C, coposQuebrados = 0;
+    //Deixa copo cair se o numero de latas for maior que copos
+    scanf("%d", &N);
+    for(i = 0; i < N; i++){
+        scanf("%d %d", &L, &C);
+        if(L > C){
+            coposQuebrados += C;
+        }
+    }
+    printf("%d\n", coposQuebrados);
+    return 0;*/
+
+    /**
+    *   2544 - Iniciante (Kage Bushin no Justu)
+    */
+
+    /*int N;
+    //Determinar número de cópias
+    while(scanf("%d", &N) != EOF){
+        int a = log2(N);
+        printf("%d\n", a);
+    }
+    return 0;*/
+
+    /**
+    *   2547 - Iniciante (Kage Bushin no Justu)
+    */
+
+    int N, AMin, AMax, Ai;
+    while(scanf("%d %d %d", &N, &AMin, &AMax) != EOF){
+        int i = 0, qtd = 0;
+        for(i = 0; i < N; i++){
+            scanf("%d", &Ai);
+            if((AMin <= Ai) && (Ai <= AMax)){
+                qtd++;
+            }
+        }
+        printf("%d\n", qtd);
+    }
+    return 0;
+
+
 }
