@@ -261,7 +261,7 @@ int main()
     *   1142 - Iniciante (PUM)
     */
 
-    int N;
+    /*int N;
     scanf("%d",&N);
     int i = 0;
     int j = 0, count = 1;
@@ -276,7 +276,7 @@ int main()
             count++;
         }
     }
-    return 0;
+    return 0;*/
 
     /**
     *   1858 - Iniciante (A Resposta de Theon)
@@ -355,7 +355,7 @@ int main()
     *   2547 - Iniciante (Kage Bushin no Justu)
     */
 
-    int N, AMin, AMax, Ai;
+    /*int N, AMin, AMax, Ai;
     while(scanf("%d %d %d", &N, &AMin, &AMax) != EOF){
         int i = 0, qtd = 0;
         for(i = 0; i < N; i++){
@@ -366,7 +366,42 @@ int main()
         }
         printf("%d\n", qtd);
     }
+    return 0;*/
+
+
+    /**
+    *   1174 - Iniciante (Seleçao em Vetor I) -- VETORES
+    */
+
+    /*double A[100];
+    int i = 0;
+    for(i = 0; i < 100; i++){
+        scanf("%lf", &A[i]);
+    }
+
+    for(i = 0; i < 100; i++){
+        if(A[i] <= 10){
+            printf("A[%d] = %.1lf\n", i, A[i]);
+        }
+    }
+    return 0;*/
+
+    /**
+    *   1172 - Iniciante (Substituição em Vetor I) -- VETORES
+    */
+
+    int X[10];
+    int i = 0;
+    for(i = 0; i < 10; i++){
+        scanf("%d", &X[i]);
+    }
+
+    /// Mudando valor
+    for(i = 0; i < 10; i++){
+        if(X[i] <= 0){
+            X[i] = 1;
+        }
+        printf("X[%d] = %d\n", i, X[i]);
+    }
     return 0;
-
-
 }
