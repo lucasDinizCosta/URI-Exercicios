@@ -409,7 +409,7 @@ int main()
     *   1173 - Iniciante (Preenchimento de Vetor I) -- VETORES
     */
 
-    int V, N[10];
+    /*int V, N[10];
     scanf("%d", &V);
     N[0] = V;               ///Atribuindo a primeira posição
     printf("N[0] = %d\n", N[0]);
@@ -418,5 +418,39 @@ int main()
         N[i] = N[i - 1] * 2;
         printf("N[%d] = %d\n", i, N[i]);
     }
-    return 0;
+    return 0;*/
+
+    /**
+    *   1035 - Iniciante (Teste de Seleção 1) --- CONDICIONAL
+    */
+
+    /*int A, B, C, D;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    scanf("%d", &C);
+    scanf("%d", &D);
+    if((B > C) && (D > A) && (C + D > A + B) && ((C > 0) && (D > 0))){
+        printf("Valores aceitos\n");
+    }
+    else{
+        printf("Valores nao aceitos\n");
+    }
+    return 0;*/
+
+    /**
+    *   1036 - Iniciante (Formula de Bhaskara) --- Operadores aritméticos (Pow e squirt)
+    */
+    /*double delta, A, B, C;
+    scanf("%lf", &A);
+    scanf("%lf", &B);
+    scanf("%lf", &C);
+    delta = pow(B, 2) - 4 * A * C;
+    if(delta < 0 || A == 0){
+        printf("Impossivel calcular\n");
+    }
+    else{
+        printf("R1 = %.5lf\n", ((-B + pow(delta, 0.5))/(2*A)));
+        printf("R2 = %.5lf\n", ((-B - pow(delta, 0.5))/(2*A)));
+    }
+    return 0;*/
 }
