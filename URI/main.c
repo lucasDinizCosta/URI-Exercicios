@@ -458,7 +458,7 @@ int main()
     *   1037 - Iniciante (Intervalo) --- CONDICIONAIS
     */
 
-    double number;
+    /*double number;
     scanf("%lf", &number);
     if((number >= 0) && (number <= 25)){
         printf("Intervalo [0,25]\n");
@@ -474,6 +474,64 @@ int main()
     }
     else{
         printf("Fora de intervalo\n");
+    }
+    return 0;*/
+
+    /**
+    *   1038 - Iniciante (Lanche) --- CONDICIONAIS
+    */
+
+    /*int codigo, quantidade;
+    scanf("%d %d", &codigo, &quantidade);
+    switch(codigo){
+        case 1:
+            printf("Total: R$ %.2lf\n", (quantidade * 4.0));
+            break;
+        case 2:
+            printf("Total: R$ %.2lf\n", (quantidade * 4.5));
+            break;
+        case 3:
+            printf("Total: R$ %.2lf\n", (quantidade * 5.0));
+            break;
+        case 4:
+            printf("Total: R$ %.2lf\n", (quantidade * 2.0));
+            break;
+        case 5:
+            printf("Total: R$ %.2lf\n", (quantidade * 1.5));
+            break;
+        default:
+            break;
+    }
+    return 0;*/
+
+    /**
+    *   1040 - Iniciante (Media 3) --- CONDICIONAIS
+    */
+
+    double N1, N2, N3, N4, NExame;
+    scanf("%lf %lf %lf %lf", &N1, &N2, &N3, &N4);
+    double media = (N1 * 2 + N2 * 3 + N3 * 4 + N4 * 1)/(2+3+4+1);
+    printf("Media: %.1lf\n", media);
+    if(media >= 7.0){
+        printf("Aluno aprovado.\n");
+    }
+    else{
+        if(media < 5.0){
+            printf("Aluno reprovado.\n");
+        }
+        else{
+            printf("Aluno em exame.\n");
+            scanf("%lf", &NExame);
+            printf("Nota do exame: %.1lf\n", NExame);
+            media = (media + NExame)/2;
+            if(media >= 5.0){
+                printf("Aluno aprovado.\n");
+            }
+            else{
+                printf("Aluno reprovado.\n");
+            }
+            printf("Media final: %.1lf\n", media);
+        }
     }
     return 0;
 }
